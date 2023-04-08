@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(Roboto-Regular.ttf);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.calculator{
+    width: 360px;
+    height: 670px;
+    background-color: black;
+    border-radius:40px;
+}
+
+.result{
+    height: 210px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.result__line{
+    color: white;
+    font-size: 64px;
+    font-family: 'Roboto';
+}
+
+.buttons{
+    height: 460px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+button{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    justify-self: center;
+}
+.zero{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    justify-self: center;
+    background-color: aqua;
+}
