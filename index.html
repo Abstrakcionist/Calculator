@@ -10,31 +10,32 @@
 <body>
     <div class="calculator">
         <div class="result">
-            <div class="result__line">0</div>
+            <div class="result__line" id="result">0</div>
         </div>
         <div class="buttons">
-            <button class="rest" id="ac">AC</button>
+            <button class="rest" id="ac" onclick = "clean()">AC</button>
             <button class="rest" id="del">Del</button>
-            <button class="rest" id="square">√</button>
-            <button class="operands" id="division">÷</button>
+            <button class="rest" id="sqrt" onclick = "op = 'sqrt'">√</button>
+            <button class="operands" id="division" onclick = "op = '/'">÷</button>
             <button class="numbers" id="one">1</button>
             <button class="numbers" id="two">2</button>
             <button class="numbers" id="three">3</button>
-            <button class="operands" id="cross">x</button>
+            <button class="operands" id="cross" onclick = "op = '*'">x</button>
             <button class="numbers" id="four">4</button>
             <button class="numbers" id="five">5</button>
             <button class="numbers" id="six">6</button>
-            <button class="operands" id="minus">-</button>
+            <button class="operands" id="minus" onclick = "op = '-'">-</button>
             <button class="numbers" id="seven">7</button>
             <button class="numbers" id="eight">8</button>
             <button class="numbers" id="nine">9</button>
-            <button class="operands" id="plus">+</button>
+            <button class="operands" id="plus" onclick = "op = '+'">+</button>
         </div>
         <div class="low-buttons">
             <div class="zero numbers" id="zero"><p>0</p></div>
             <button class="numbers" id="point">,</button>
-            <button class="operands" id="equals">=</button>
+            <button class="operands" id="equals" onclick = "solve()">=</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
